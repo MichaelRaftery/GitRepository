@@ -13,3 +13,5 @@ WpfWindow("HPE MyFlight Sample Applicatio").WpfButton("SELECT FLIGHT").Click @@ 
 WpfWindow("HPE MyFlight Sample Applicatio").WpfEdit("passengerName").Set DataTable("passengerName", dtGlobalSheet) @@ hightlight id_;_2119523712_;_script infofile_;_ZIP::ssf20.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfButton("ORDER").Click @@ hightlight id_;_2119523328_;_script infofile_;_ZIP::ssf21.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").Close @@ hightlight id_;_328370_;_script infofile_;_ZIP::ssf22.xml_;_
+// Added line
+
