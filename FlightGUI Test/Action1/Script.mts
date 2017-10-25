@@ -1,4 +1,5 @@
-﻿WpfWindow("HPE MyFlight Sample Applicatio").WpfEdit("agentName").Set "john" @@ hightlight id_;_2119513440_;_script infofile_;_ZIP::ssf3.xml_;_
+﻿' Blank line
+WpfWindow("HPE MyFlight Sample Applicatio").WpfEdit("agentName").Set "john" @@ hightlight id_;_2119513440_;_script infofile_;_ZIP::ssf3.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfEdit("password").SetSecure "597f912e3fad934c69d1" @@ hightlight id_;_2119522512_;_script infofile_;_ZIP::ssf4.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfButton("OK").Click @@ hightlight id_;_2119508304_;_script infofile_;_ZIP::ssf5.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfComboBox("fromCity").Select DataTable("fromCity", dtGlobalSheet) @@ hightlight id_;_2119517568_;_script infofile_;_ZIP::ssf7.xml_;_
