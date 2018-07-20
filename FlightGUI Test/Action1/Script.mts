@@ -6,7 +6,7 @@ WpfWindow("HPE MyFlight Sample Applicatio").WpfComboBox("toCity").Select DataTab
 WpfWindow("HPE MyFlight Sample Applicatio").WpfImage("WpfImage").Click 7,14 @@ hightlight id_;_2120952416_;_script infofile_;_ZIP::ssf10.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfCalendar("Su").SetDate "31-Dec-2018" @@ hightlight id_;_2119521600_;_script infofile_;_ZIP::ssf11.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfComboBox("Class").Select "First" @@ hightlight id_;_2119511904_;_script infofile_;_ZIP::ssf13.xml_;_
-WpfWindow("HPE MyFlight Sample Applicatio").WpfComboBox("numOfTickets").Select "2" @@ hightlight id_;_2119514448_;_script infofile_;_ZIP::ssf15.xml_;_
+WpfWindow("HPE MyFlight Sample Applicatio").WpfComboBox("numOfTickets").Select DataTable("Tickets", dtGlobalSheet) @@ hightlight id_;_2119514448_;_script infofile_;_ZIP::ssf15.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfButton("FIND FLIGHTS").Click @@ hightlight id_;_2119515888_;_script infofile_;_ZIP::ssf16.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfTable("flightsDataGrid").SelectCell 0,0 @@ hightlight id_;_2119510848_;_script infofile_;_ZIP::ssf17.xml_;_
 WpfWindow("HPE MyFlight Sample Applicatio").WpfButton("SELECT FLIGHT").Click @@ hightlight id_;_2119514256_;_script infofile_;_ZIP::ssf18.xml_;_
