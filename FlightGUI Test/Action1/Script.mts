@@ -1,4 +1,5 @@
-﻿WpfWindow("Micro Focus MyFlight Sample Application").WpfEdit("agentName").Set "john" @@ hightlight id_;_2119513440_;_script infofile_;_ZIP::ssf3.xml_;_
+﻿systemUtil.Run("C:\Program Files (x86)\Micro Focus\Unified Functional Testing\samples\Flights Application\FlightsGUI.exe")
+WpfWindow("Micro Focus MyFlight Sample Application").WpfEdit("agentName").Set "john" @@ hightlight id_;_2119513440_;_script infofile_;_ZIP::ssf3.xml_;_
 WpfWindow("Micro Focus MyFlight Sample Application").WpfEdit("password").SetSecure "597f912e3fad934c69d1" @@ hightlight id_;_2119522512_;_script infofile_;_ZIP::ssf4.xml_;_
 WpfWindow("Micro Focus MyFlight Sample Application").WpfButton("OK").Click @@ hightlight id_;_2119508304_;_script infofile_;_ZIP::ssf5.xml_;_
 WpfWindow("Micro Focus MyFlight Sample Application").WpfComboBox("fromCity").Select DataTable("fromCity", dtGlobalSheet) @@ hightlight id_;_2119517568_;_script infofile_;_ZIP::ssf7.xml_;_
