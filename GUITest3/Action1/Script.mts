@@ -8,6 +8,6 @@ WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("numOfTickets").Select "2" 
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click @@ hightlight id_;_1955382360_;_script infofile_;_ZIP::ssf15.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfTable("flightsDataGrid").SelectCell 0,0 @@ hightlight id_;_1955383272_;_script infofile_;_ZIP::ssf16.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("SELECT FLIGHT").Click @@ hightlight id_;_1955383752_;_script infofile_;_ZIP::ssf17.xml_;_
-WpfWindow("Micro Focus MyFlight Sample").WpfEdit("passengerName").Set "Mike Raftery" @@ hightlight id_;_1955383992_;_script infofile_;_ZIP::ssf18.xml_;_
+WpfWindow("Micro Focus MyFlight Sample").WpfEdit("passengerName").Set "Tom Brady" @@ hightlight id_;_1955383992_;_script infofile_;_ZIP::ssf18.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("ORDER").Click @@ hightlight id_;_1955754400_;_script infofile_;_ZIP::ssf19.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").Close @@ hightlight id_;_5112598_;_script infofile_;_ZIP::ssf20.xml_;_
