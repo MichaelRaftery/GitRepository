@@ -1,8 +1,8 @@
 ﻿WpfWindow("Micro Focus MyFlight Sample").WpfEdit("agentName").Set "john" @@ hightlight id_;_2145187200_;_script infofile_;_ZIP::ssf2.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfEdit("password").SetSecure "5e5e9cf3f8c2d48a2dab" @@ hightlight id_;_1955376696_;_script infofile_;_ZIP::ssf3.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click @@ hightlight id_;_1955378904_;_script infofile_;_ZIP::ssf4.xml_;_
-WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").Select "Denver" @@ hightlight id_;_1955379624_;_script infofile_;_ZIP::ssf6.xml_;_
-WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").Select "Frankfurt" @@ hightlight id_;_1955380680_;_script infofile_;_ZIP::ssf8.xml_;_
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").Select DataTable("fromCity", dtGlobalSheet) @@ hightlight id_;_1955379624_;_script infofile_;_ZIP::ssf6.xml_;_
+WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").Select DataTable("toCity", dtGlobalSheet) @@ hightlight id_;_1955380680_;_script infofile_;_ZIP::ssf8.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("Class").Select "First" @@ hightlight id_;_1955381976_;_script infofile_;_ZIP::ssf12.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("numOfTickets").Select "2" @@ hightlight id_;_1955377128_;_script infofile_;_ZIP::ssf14.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click @@ hightlight id_;_1955382360_;_script infofile_;_ZIP::ssf15.xml_;_
