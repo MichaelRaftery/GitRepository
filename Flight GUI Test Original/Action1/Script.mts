@@ -8,5 +8,4 @@ WpfWindow("Micro Focus MyFlight Sample").WpfTable("flightsDataGrid").SelectCell 
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("SELECT FLIGHT").Click @@ hightlight id_;_2116970792_;_script infofile_;_ZIP::ssf11.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfEdit("passengerName").Set "Mike Raftery" @@ hightlight id_;_2116949480_;_script infofile_;_ZIP::ssf13.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("ORDER").Click @@ hightlight id_;_2116958744_;_script infofile_;_ZIP::ssf14.xml_;_
-WpfWindow("Micro Focus MyFlight Sample").Close @@ hightlight id_;_2950258_;_script infofile_;_ZIP::ssf15.xml_;_
-'comment line added
+WpfWindow("Micro Focus MyFlight Sample").Close
