@@ -1,0 +1,267 @@
+2020-04-14 12:21:09,284 [1] INFO  - Loaded appender: FileAppenderInternal
+2020-04-14 12:21:09,294 [1] INFO  - Loaded appender: FileAppenderExternal
+2020-04-14 12:21:09,295 [1] INFO  - Loaded appender: UserLoggerAppender
+2020-04-14 12:21:09,296 [1] INFO  - Loaded appender: FileAppenderInternal
+2020-04-14 12:21:09,296 [1] INFO  - Loaded appender: FileAppenderExternal
+2020-04-14 12:21:09,297 [1] INFO  - Loaded appender: UserLoggerAppender
+2020-04-14 12:21:09,723 [9] INFO  - Step 'Start' : Step 'Start' started
+2020-04-14 12:21:09,755 [9] INFO  - Step 'Start' ended successfully
+2020-04-14 12:21:09,758 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2020-04-14 12:21:10,081 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2020-04-14 12:21:10,083 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2020-04-14 12:21:10,097 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <GetFlights xmlns="HP.SOAQ.SampleApp">
+      <DepartureCity>Denver</DepartureCity>
+      <ArrivalCity>Frankfurt</ArrivalCity>
+      <FlightDate>2020-06-01T00:00:00</FlightDate>
+    </GetFlights>
+  </Body>
+</Envelope>
+
+2020-04-14 12:21:10,114 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-04-14 12:21:13,352 [9] INFO  - Returning the response to the previous channel
+2020-04-14 12:21:13,358 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightsResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>02:53 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>02:09 PM</DepartureTime>
+          <FlightNumber>13628</FlightNumber>
+          <Price>124.8</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:41 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:57 PM</DepartureTime>
+          <FlightNumber>14205</FlightNumber>
+          <Price>121.2</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:45 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15877</FlightNumber>
+          <Price>100.5</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:30 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15878</FlightNumber>
+          <Price>172.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:09 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>10:24 AM</DepartureTime>
+          <FlightNumber>15881</FlightNumber>
+          <Price>100.1</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:33 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:48 PM</DepartureTime>
+          <FlightNumber>15885</FlightNumber>
+          <Price>104.4</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>03:57 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>15889</FlightNumber>
+          <Price>104.1</Price>
+        </Flight>
+      </GetFlightsResult>
+    </GetFlightsResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-04-14 12:21:13,373 [9] INFO  - Structural Validation: True
+2020-04-14 12:21:13,378 [9] INFO  - Step 'GetFlights' ended successfully
+2020-04-14 12:21:13,380 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2020-04-14 12:21:13,383 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <CreateFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <FlightOrder>
+        <Class>First</Class>
+        <CustomerName>Mike Raftery</CustomerName>
+        <DepartureDate>2020-06-01T00:00:00</DepartureDate>
+        <FlightNumber>13628</FlightNumber>
+        <NumberOfTickets>2</NumberOfTickets>
+      </FlightOrder>
+    </CreateFlightOrder>
+  </Body>
+</Envelope>
+
+2020-04-14 12:21:13,385 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-04-14 12:21:13,405 [9] INFO  - Returning the response to the previous channel
+2020-04-14 12:21:13,407 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <OrderNumber>709</OrderNumber>
+        <TotalPrice>249.6</TotalPrice>
+      </CreateFlightOrderResult>
+    </CreateFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-04-14 12:21:13,411 [9] INFO  - Structural Validation: True
+2020-04-14 12:21:13,415 [9] INFO  - Checkpoint 2: "249.6" <= "250" passed
+2020-04-14 12:21:13,418 [9] INFO  - Step 'CreateFlightOrder' ended successfully
+2020-04-14 12:21:13,420 [9] INFO  - Step 'Iteration 1' ended successfully
+2020-04-14 12:21:13,425 [9] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2020-04-14 12:21:13,426 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2020-04-14 12:21:13,428 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <GetFlights xmlns="HP.SOAQ.SampleApp">
+      <DepartureCity>London</DepartureCity>
+      <ArrivalCity>Sydney</ArrivalCity>
+      <FlightDate>2020-06-01T00:00:00</FlightDate>
+    </GetFlights>
+  </Body>
+</Envelope>
+
+2020-04-14 12:21:13,430 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-04-14 12:21:13,436 [9] INFO  - Returning the response to the previous channel
+2020-04-14 12:21:13,440 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightsResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Sydney</ArrivalCity>
+          <ArrivalTime>04:48 PM</ArrivalTime>
+          <DepartureCity>London</DepartureCity>
+          <DepartureTime>03:07 PM</DepartureTime>
+          <FlightNumber>10690</FlightNumber>
+          <Price>148</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Sydney</ArrivalCity>
+          <ArrivalTime>12:00 PM</ArrivalTime>
+          <DepartureCity>London</DepartureCity>
+          <DepartureTime>10:19 AM</DepartureTime>
+          <FlightNumber>12280</FlightNumber>
+          <Price>158.8</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Sydney</ArrivalCity>
+          <ArrivalTime>01:54 PM</ArrivalTime>
+          <DepartureCity>London</DepartureCity>
+          <DepartureTime>10:24 AM</DepartureTime>
+          <FlightNumber>12589</FlightNumber>
+          <Price>174.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Sydney</ArrivalCity>
+          <ArrivalTime>04:18 PM</ArrivalTime>
+          <DepartureCity>London</DepartureCity>
+          <DepartureTime>12:48 PM</DepartureTime>
+          <FlightNumber>12593</FlightNumber>
+          <Price>176.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Sydney</ArrivalCity>
+          <ArrivalTime>06:42 PM</ArrivalTime>
+          <DepartureCity>London</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>12597</FlightNumber>
+          <Price>178.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Sydney</ArrivalCity>
+          <ArrivalTime>09:36 AM</ArrivalTime>
+          <DepartureCity>London</DepartureCity>
+          <DepartureTime>07:55 AM</DepartureTime>
+          <FlightNumber>13220</FlightNumber>
+          <Price>161.2</Price>
+        </Flight>
+      </GetFlightsResult>
+    </GetFlightsResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-04-14 12:21:13,455 [9] INFO  - Structural Validation: True
+2020-04-14 12:21:13,459 [9] INFO  - Step 'GetFlights' ended successfully
+2020-04-14 12:21:13,461 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2020-04-14 12:21:13,465 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <CreateFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <FlightOrder>
+        <Class>First</Class>
+        <CustomerName>Mike Raftery</CustomerName>
+        <DepartureDate>2020-06-01T00:00:00</DepartureDate>
+        <FlightNumber>10690</FlightNumber>
+        <NumberOfTickets>2</NumberOfTickets>
+      </FlightOrder>
+    </CreateFlightOrder>
+  </Body>
+</Envelope>
+
+2020-04-14 12:21:13,467 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-04-14 12:21:13,475 [9] INFO  - Returning the response to the previous channel
+2020-04-14 12:21:13,477 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <OrderNumber>710</OrderNumber>
+        <TotalPrice>296</TotalPrice>
+      </CreateFlightOrderResult>
+    </CreateFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-04-14 12:21:13,479 [9] INFO  - Structural Validation: True
+2020-04-14 12:21:13,482 [9] ERROR - Checkpoint 2: "296" <= "250" failed
+2020-04-14 12:21:13,485 [9] INFO  - Step 'CreateFlightOrder' ended successfully
+2020-04-14 12:21:13,487 [9] INFO  - Step 'Iteration 2' ended successfully
+2020-04-14 12:21:13,490 [9] INFO  - Step 'Test Flow' ended successfully
+2020-04-14 12:21:13,549 [9] INFO  - Step 'End' : Step 'End' started
+2020-04-14 12:21:13,561 [9] INFO  - Step 'End' ended successfully

@@ -1,0 +1,5 @@
+<RuntimeResourceManager>
+<RuntimeResource><Key>{Step.GeneralProperties.StServiceCallActivity4.TransportProtocol.SOAPProperties.EndpointAddress}</Key><Path>0</Path><Value></Value><AddinId>StmDependencyResolver</AddinId></RuntimeResource>
+<RuntimeResource><Key>{Step.GeneralProperties.StServiceCallActivity5.TransportProtocol.SOAPProperties.EndpointAddress}</Key><Path>0</Path><Value></Value><AddinId>StmDependencyResolver</AddinId></RuntimeResource>
+<RuntimeResource><Key>{GetFlights_Input_1!MainDetails.TablePath}</Key><Path>Local</Path><Value>GetFlights_Input_1\GetFlights_Input_1.xls</Value><AddinId>DataAwarenessDependencyResolver</AddinId></RuntimeResource>
+</RuntimeResourceManager>
